@@ -1,0 +1,280 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(36, 36, 75);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Home-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-box img {
+  border-radius: 50%;
+  max-width: 15vw;
+  border: 2px solid white;
+
+}
+
+.info {
+  color: white;
+  text-align: center;
+
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  left: 0;
+  width: 20vw;
+  background-color: rgb(36, 36, 75);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+/* .panel button {
+  background-color: aliceblue;
+  padding: 5px;
+} */
+
+.Main-panel {
+  position: absolute;
+  right: 0;
+  width: 73vw;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info-wrapper {
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  height: fit-content;
+}
+
+.content {
+  font-weight: 700;
+}
+
+/* navigation */
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  width: 10vw;
+  list-style: none;
+}
+
+.navigation li {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation p {
+  display: inline;
+}
+
+.navigation li:hover {
+  color: brown;
+}
+
+/* Feedback */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feedback-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reporter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center
+}
+
+.reporter img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* Experience */
+.person-displayer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.person-displayer div:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-displayer div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+/* portfolio */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.image-container img {
+  width: 200px;
+  filter: grayscale(100%);
+}
+
+.image-container img:hover{
+  filter: grayscale(0%);
+}
+
+.image-popup {
+  position: fixed;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.image-info {
+  margin-top: 10px;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+/* skills */
+.skill-form {
+  border: 2px solid rgb(36, 36, 75);
+  border-radius: 4px;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+Form label {
+  font-weight: 500;
+  margin: 10px;
+  font-size: 1.3em;
+}
+
+.skill-form-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+Form div:last-child {
+  color: red
+}
+
+.skill-input {
+  display: inline-block;
+  width: 30%;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.skill-header {
+  display: flex;
+  flex-direction: row;
+  gap: 65%;
+}
+
+.skill-header div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-inputer {
+  border: 1px solid black;
+  width: 30%;
+  height: 40px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-range {
+  height: 30px;
+  color: white;
+  padding-left: 5px;
+  background-color: rgb(36, 36, 75);
+}
+
+.skill-list-footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,80 @@
+/* Reset CSS */
+
+/* Box sizing border-box for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margin and padding on most elements */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles (bullets/numbers) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Set base font size and remove font-size inheritance */
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Remove underlines from links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Remove default button styles */
+  button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Remove focus outlines for mouse users, but keep for keyboard users */
+  a, button, input, select, textarea {
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  /* Reset form elements to match overall styles */
+  button, input, select, textarea {
+    font: inherit;
+  }
+  
+  /* Remove default styles for images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Standardize header and heading elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  /* Standardize form elements */
+  input, select, textarea {
+    font-family: inherit;
+  }
+  
+  /* Add responsive media elements */
+  iframe, video {
+    max-width: 100%;
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  

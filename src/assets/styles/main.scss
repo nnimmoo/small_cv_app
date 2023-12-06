@@ -1,0 +1,124 @@
+.Home-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  
+    .photo-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        border-radius: 50%;
+        max-width: 15vw;
+        border: 2px solid white;
+      }
+    }
+  
+    .info {
+      color: white;
+      text-align: center;
+    }
+  
+    button {
+      color: black;
+      background-color: white;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .panel {
+      position: fixed;
+      left: 0;
+      width: 20vw;
+      background-color: rgb(36, 36, 75);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    .Main-panel {
+      position: absolute;
+      right: 0;
+      width: 73vw;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .info-wrapper {
+      background-color: rgb(212, 212, 212);
+      padding: 10px;
+      height: fit-content;
+    }
+  
+    /* navigation */
+  
+    .navigation {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+      }
+  
+      li {
+        cursor: pointer;
+  
+        &:hover {
+          color: brown;
+        }
+      }
+    }
+  
+    /* Feedback */
+    .feedback-item {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .reporter {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+  
+      img {
+        border-radius: 50%;
+        width: 50px;
+      }
+    }
+  
+    /* Experience */
+    .person-displayer {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  
+      div:first-of-type {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      div:last-of-type {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  
